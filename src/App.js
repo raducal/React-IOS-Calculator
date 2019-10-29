@@ -56,6 +56,9 @@ function App() {
       case "dot":
         number += ".";
         break;
+      case "delete":
+        number = number.slice(0, -1);
+        break;
       case "equals":
         number = eval(number);
         if (number % 1 !== 0) {

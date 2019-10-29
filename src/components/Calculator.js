@@ -1,13 +1,19 @@
 import React from "react";
 import Button from "./Button";
+import { FaBackspace } from "react-icons/fa";
 
 export default function Calculator({ handleBtnClick }) {
   return (
     <div className="calc">
       <Button
-        cln="calc-number one"
-        vals={{ one: "CLR", two: "%", three: "÷" }}
-        values={{ one: "clear", two: "percent", three: "divide" }}
+        cln="calc-number"
+        vals={{ one: "CLR", two: "%", three: <FaBackspace />, four: "/" }}
+        values={{
+          one: "clear",
+          two: "percent",
+          three: "delete",
+          four: "divide"
+        }}
         handleBtnClick={handleBtnClick}
       />
       <Button

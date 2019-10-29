@@ -3,7 +3,7 @@ import React from "react";
 export default function Button({ cln, vals, values, handleBtnClick }) {
   return (
     <div className={cln}>
-      <button placeholder="0" value={values.one} onClick={handleBtnClick}>
+      <button value={values.one} onClick={handleBtnClick}>
         {vals.one}
       </button>
       <button value={values.two} onClick={handleBtnClick}>
