@@ -1,22 +1,77 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  background: #000;
+  line-height: 1.2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body-container {
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #09d3ac;
+.calc-container {
+  width: 18%;
+}
+
+.calc {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1rem;
+  margin: 0.6rem 0 1rem 10px;
+}
+
+.calc-number {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.one {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.calc-number button {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #555;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.calc-number button:hover {
+  background: #eeeeee;
+  color: #222;
+}
+
+.calc-screen {
+  width: 92%;
+  height: 3rem;
+  background: #222;
+  margin: 1rem 10px;
+  color: #eeeeee;
+  display: flex;
+  font-size: 1.8rem;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}
+
+.calc-number .orangeBtn {
+  background: #d3741b;
 }
