@@ -11,6 +11,9 @@ function App() {
       case "clear":
         number = "";
         break;
+      case "0":
+        number += "0";
+        break;
       case "1":
         number += "1";
         break;
@@ -60,16 +63,23 @@ function App() {
         number = number.slice(0, -1);
         break;
       case "equals":
-        number = eval(number);
-        if (number % 1 !== 0) {
-          number = number.toFixed(3);
-        } else {
-          number = number.toFixed(0);
+        try {
+          number = eval(number);
+          if (number % 1 !== 0) {
+            number = number.toFixed(3);
+          } else {
+            number = number.toFixed(0);
+          }
+        } catch (error) {
+          console.log("error");
+          number = "";
         }
         break;
 
       default:
+        number = "";
     }
+
     setCalcvalue(number);
   };
 

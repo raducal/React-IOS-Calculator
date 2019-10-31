@@ -28,5 +28,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Step 1: Download repository",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raducostica/React-IOS-Calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raducostica/React-IOS-Calculator/issues"
+  },
+  "homepage": "https://github.com/raducostica/React-IOS-Calculator#readme"
 }
